@@ -15,7 +15,7 @@ RUN apt-get update && \
 	apt-get install -y salt-master salt-minion \
 	salt-cloud salt-api
 
-# Setup halite
+# Setup halite 
 RUN pip install cherrypy docker-py halite
 
 # Add salt config files
