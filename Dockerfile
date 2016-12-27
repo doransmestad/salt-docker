@@ -6,7 +6,7 @@ ENV REFRESHED_AT 2016-12-27
 #RUN apt-get update && \
 #	apt-get install -y wget curl dnsutils python-pip python-dev python-apt software-properties-common dmidecode sudo
 #RUN apt-get update && apt-get install -y wget sudo
-RUN install_packages wget sudo
+RUN install_packages wget sudo procps
 
 # Add Salt Jessie repository
 RUN echo deb http://repo.saltstack.com/apt/debian/8/amd64/latest jessie main | tee /etc/apt/sources.list.d/saltstack.list 
