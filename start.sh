@@ -12,7 +12,8 @@ echo $SALT_NAME > /etc/salt/minion_id
 # If salt master also start minion in background
 if [ $SALT_USE == "master" ]; then
   echo "INFO: Starting salt-minion and auto connect to salt-master"
-  sudo service salt-minion start
+  #sudo service salt-minion start
+  sudo /usr/bin/salt-minion --log-level=$LOG_LEVEL
 fi
 
 # Set salt grains
