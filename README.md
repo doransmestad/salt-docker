@@ -1,7 +1,7 @@
 Easy Salt testing with Docker forked from [jacksoncage/salt-docker](https://github.com/jacksoncage/salt-docker/)
 ===========
 
-This repo provides a Salt setup with one master and one (or multiple) minions to be able to test and work with states, pillars and all other salt functionality. By using docker it's easy to reproduce and test you code.
+This repo provides a Salt setup with one master and one (or multiple) minions to be able to test and work with states, pillars and all other salt functionality. By using docker it's easy to reproduce and test you code. Image is based on bitnami/minideb
 
 Image includes both salt-master, salt-minion, salt-api and also salt-cloud to be able to test and troubleshoot all things salt. `SALT_USE` environment variable is used to determent if container should be running as master or minion.
 
@@ -11,7 +11,7 @@ Salt master is auto accepting all minions.
 
 ### Latest from Saltstack repository for Debian Jessie
 
- - **2016.3.0 (Boron)** in 20160917
+ - **2016.11.1** in 20161229
 
 ## Get it running
 
