@@ -1,11 +1,8 @@
 FROM        bitnami/minideb:latest
 MAINTAINER  Frederic Perrouin "frederic@fredprod.com"
-ENV REFRESHED_AT 2016-12-27
+ENV REFRESHED_AT 2017-01-12
 
 # Update system
-#RUN apt-get update && \
-#	apt-get install -y wget curl dnsutils python-pip python-dev python-apt software-properties-common dmidecode sudo
-#RUN apt-get update && apt-get install -y wget sudo
 RUN install_packages wget sudo procps
 
 # Add Salt Jessie repository
@@ -13,14 +10,8 @@ RUN echo deb http://repo.saltstack.com/apt/debian/8/amd64/latest jessie main | t
 RUN wget -qO - http://repo.saltstack.com/apt/debian/8/amd64/latest/SALTSTACK-GPG-KEY.pub | apt-key add -
 
 # Install salt master/minion/cloud/api
-#RUN apt-get update && \
-#	apt-get install -y salt-master salt-minion \
-#	salt-cloud salt-api
 RUN apt-get update
 RUN install_packages salt-master salt-minion salt-cloud salt-api
-
-# Setup halite
-#RUN pip install cherrypy docker-py halite
 
 # Add salt config files
 ADD etc/master /etc/salt/master
