@@ -6,3 +6,4 @@ pillar_roots:
   base:
     - /srv/salt/pillar
 auto_accept: True
+state_verbose: True
