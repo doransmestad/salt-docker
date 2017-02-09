@@ -1,3 +1,5 @@
 reactor:
   - 'salt/minion/*/start':
     - /srv/salt/reactor/start.sls
+  - 'link-template-logstash':
+    - /srv/salt/reactor/link-template-logstash.sls
