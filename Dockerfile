@@ -1,6 +1,6 @@
 FROM        bitnami/minideb:latest
 MAINTAINER  Frederic Perrouin "frederic@fredprod.com"
-ENV REFRESHED_AT 2017-01-12
+ENV REFRESHED_AT 2017-02-09
 
 # Update system
 RUN install_packages wget sudo procps
