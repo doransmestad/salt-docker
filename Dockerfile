@@ -16,7 +16,7 @@ RUN apt-get install -y salt-master salt-minion salt-cloud salt-api
 # Add salt config files
 ADD etc/master /etc/salt/master
 ADD etc/minion /etc/salt/minion
-ADD etc/reactor /etc/salt/master.d/reactor
+ADD etc/reactor /etc/salt/master.d/reactor.conf
 
 # Expose volumes
 VOLUME ["/etc/salt", "/var/cache/salt", "/var/log/salt", "/srv/salt"]

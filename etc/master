@@ -7,3 +7,4 @@ pillar_roots:
     - /srv/salt/pillar
 auto_accept: True
 state_verbose: True
+default_include: master.d/*.conf
