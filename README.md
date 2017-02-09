@@ -12,7 +12,7 @@ Salt master is auto accepting all minions.
 ### Latest from Saltstack repository for Debian Jessie
 
  - **2016.3.0 (Boron)** in 20160917 except tag:minideb
- - **2016.11.1** in 20161229 tag:minideb
+ - **2016.11.2** in 20170209 tag:minideb
 
 ## Get it running
 
@@ -64,7 +64,6 @@ Tag represent distribution based.
  - ubuntu16.04
  - latest (Debian Jessie)
  - minideb (bitnami/minideb)
- - develop (do not use it!)
 
 ## Build
 
